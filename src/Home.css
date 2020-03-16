@@ -19,6 +19,8 @@
 .avtarstyle{
     display: inline-block;
     background-color: red;
+    padding: 20px;
+    
     width: 200px;
     height: 200px;
 }

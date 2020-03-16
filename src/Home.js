@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import './Home.css';
 import Avatarlist from './Avatarlist';
+import NavbarPage from './NavbarPage';
 
 class Home extends Component{
     render (){
@@ -29,6 +30,8 @@ class Home extends Component{
             }
         ]
 
+
+        
         const arrayavaratcard = avaratlistarray.map( (avatarcard,i) => {
             return <Avatarlist 
                         id   = {avaratlistarray[i].id}
@@ -38,6 +41,7 @@ class Home extends Component{
 
         return (
             <div className="mainpage">
+                 <NavbarPage />
                  <h1> Home page </h1>
                  {arrayavaratcard}
             </div>
