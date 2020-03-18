@@ -11,22 +11,22 @@ class Home extends Component{
             {
                 id:1,
                 name: "suraj",
-                work: "Web Devloper"
+                work: "System"
             },
             {
                 id:2,
                 name: "suraj",
-                work: "Web Devloper"
+                work: "System"
             },
             {
                 id:3,
                 name: "suraj",
-                work: "Web Devloper"
+                work: "System"
             },
             {
                 id:4,
                 name: "suraj",
-                work: "Web Devloper"
+                work: "System"
             }
         ]
 
@@ -40,11 +40,14 @@ class Home extends Component{
         })
 
         return (
+            <>
+            <NavbarPage />
             <div className="mainpage">
-                 <NavbarPage />
+                 
                  <h1> Home page </h1>
                  {arrayavaratcard}
             </div>
+            </>
         )
     }
 }
