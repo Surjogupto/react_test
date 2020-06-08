@@ -14,6 +14,10 @@ export default function Login(props) {
     event.preventDefault();
   }
 
+  function log(){
+      console.log("hello");
+  }
+
   return (
 
     
@@ -60,7 +64,7 @@ export default function Login(props) {
             placeholder="Password"
           />
         </FormGroup>
-        <Button id="LoginBtn" block bsSize="large" disabled={!validateForm()} type="submit">
+        <Button id="LoginBtn" block bsSize="large" onClick={log} disabled={!validateForm()} type="submit">
           Login
         </Button>
       </form>
